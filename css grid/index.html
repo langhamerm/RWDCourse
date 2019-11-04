@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- External CSS -->
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+
+    <title>Persevere RRWD Course: CSS Grid</title>
+
+    <style>
+      #parent {
+        background-color: rgba(0, 0, 0, .5);
+        display: grid;
+        /* grid-template-columns: 33% 33% 33%; */
+        /* grid-template-columns: auto auto auto; */
+        /* grid-template-columns: auto auto auto auto; */
+        /* grid-template-columns: 250px auto 100px auto; */
+        grid-template-columns: 1fr 2fr 1fr; /* Superior to using percentages for CSS Grid */
+        grid-template-rows: 100px 150px 50px;
+      }
+
+      .child1 {
+        background-color: skyblue;
+      }
+
+      .child2 {
+        background-color: powderblue;
+      }
+
+      .child3 {
+        background-color: cadetblue;
+      }
+
+      .child4 {
+        background-color: indianred;
+      }
+
+      .child5 {
+        background-color: salmon;
+      }
+
+      .child6 {
+        background-color: firebrick;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div id="parent">
+
+      <div class="child1">1</div>
+      <div class="child2">2</div>
+      <div class="child3">3</div>
+
+      <div class="child4">4</div>
+      <div class="child5">5</div>
+      <div class="child6">6</div>
+
+    </div> 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
