@@ -31,63 +31,128 @@
         background: rgba(255, 0, 0, 0.25);
       }
       header {
-        background: rgba(0, 0, 0, 0.25);
-        margin-bottom: 10px;
+        background: white;
+        margin-bottom: 355px;
         height: 50px;
+        /* padding-bottom: 150px; */
+        border-top: 2px solid black;
+      }
+      a {
+        font-weight: bolder;
+        color: black;
       }
       section {
         background: rgba(0, 0, 0, 0.25);
         margin-bottom: 10px;
-        height: 1000px;
+        height: 100%;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
       }
       aside {
         background: rgba(0, 0, 0, 0.25);
         margin-bottom: 10px;
-        height: 1000px;
-        display: none;
+        height: 200px;
+        display: block;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        border-left: 2px solid black;
       }
       footer {
         background: rgba(0, 0, 0, 0.25);
         margin-bottom: 25px;
+        text-align: center;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        border-left: 2px solid black;
       }
+      h1 {
+        text-align: center;
+      }
+      #mern {
+        width: 300px;
+        height: 97px;
+      }
+      #mern-icons {
+        width: 100px;
+        height: 75px;
+        float: left;
+      }
+      /* #mern-bio {
+        
+      } */
       #parent1 {
         width: 100%;
         height: 100%;
         display: grid;
         grid-template-rows: auto auto auto auto;
-
       }
       #parent2 {
         width: 100%;
         height: 100%;
         display: grid;
         grid-template-columns: auto auto;
-
+      }
+      #parent3 {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+      }
+      #parent4 {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: auto;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
       }
       .child1 {
         background-color: skyblue;
+        border-bottom: 2px solid black;
       }
 
       .child2 {
         background-color: powderblue;
+        border-bottom: 2px solid black;
       }
 
       .child3 {
         background-color: cadetblue;
+        border-bottom: 2px solid black;
       }
 
       .child4 {
         background-color: aqua;
       }
-      
+
       .child5 {
         background-color: firebrick;
+        border-right: 2px solid black;
       }
 
       .child6 {
         background-color: salmon;
       }
-
+      .child7 {
+        border-left: 2px solid black;
+      }
+      .child7,
+      .child8,
+      .child9 {
+        background-color: white;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+      }
+      .child10 {
+        background-color: white;
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+      }
       /* Applies to any device whose screen width is 768px or wider */
       @media screen and (min-width: 768px) {
         body {
@@ -95,7 +160,22 @@
         }
 
         aside {
-            display: block;
+          display: grid;
+          height: 275px;
+        }
+        header {
+          margin-bottom: 175px;
+        }
+        #parent3 {
+          grid-template-columns: auto auto;
+          grid-template-rows: auto auto;
+        }
+        #parent2 {
+          grid-template-columns: auto auto;
+          grid-template-rows: auto;
+        }
+        #mern-bio {
+          font-size: 1.25rem;
         }
       }
 
@@ -106,40 +186,169 @@
         }
 
         section {
-            float: left;
-            width: 69%;
-            /* margin-right: 10px; */
+          float: left;
+          width: 69%;
+          height: 1000px;
+          margin-left: 5px;
+          border-left: 2px solid black;
         }
 
         aside {
-            float: right;
-            width: 30%;
+          float: right;
+          width: 30%;
+          height: 1000px;
+          margin-right: 5px;
+        }
+        header {
+          margin-bottom: 75px;
+          margin-right: 5px;
+          margin-left: 5px;
         }
 
         footer {
-            clear: both;
+          clear: both;
+          margin-right: 5px;
+          margin-left: 5px;
         }
-
+        #parent3 {
+          grid-template-columns: auto auto auto auto;
+          grid-template-rows: auto;
+        }
+        #parent2 {
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: auto auto;
+        }
+        #parent1 {
+          grid-template-rows: auto auto auto auto;
+          grid-template-columns: auto;
+        }
+        #mern-bio {
+          font-size: 1.75rem;
+        }
+        #mern-icons {
+          width: 200px;
+          height: 150px;
+        }
       }
     </style>
   </head>
   <body>
-    <header>Header</header>
+    <div id="parent4">
+      <div class="child11">
+        <h1>M.E.R.N Stack Web Development</h1>
+      </div>
+    </div>
+    <header>
+      <div id="parent3">
+        <div class="child7">
+          <img
+            id="mern"
+            src="https://zdnet3.cbsistatic.com/hub/i/r/2018/02/16/8abdb3e1-47bc-446e-9871-c4e11a46f680/resize/370xauto/8a68280fd20eebfa7789cdaa6fb5eff1/mongo-db-logo.png"
+          />
+        </div>
+        <div class="child8">
+          <img
+            id="mern"
+            src="https://blog.amt.in/wp-content/uploads/2017/12/e16da876-c2fd-4eb8-ae72-4b193c534938-Edited.png"
+          />
+        </div>
+        <div class="child9">
+          <img
+            id="mern"
+            src="https://i0.wp.com/www.ryadel.com/wp-content/uploads/2017/10/react-js-logo.png?fit=735%2C300&ssl=1"
+          />
+        </div>
+        <div class="child10">
+          <img
+            id="mern"
+            src="https://miro.medium.com/max/1600/1*dspCRVCpRgFRaUozxDpucA.png"
+          />
+        </div>
+      </div>
+    </header>
     <section>
       <div id="parent1">
-        <div class="child1">1</div>
-        <div class="child2">2</div>
-        <div class="child3">3</div>
-        <div class="child4">4</div>
+        <div class="child1">
+          <img
+            id="mern-icons"
+            src="http://www.trugeek.in/wp-content/uploads/2016/11/Mongo-Db-1.png"
+          />
+          <p id="mern-bio">
+            <a href="https://www.mongodb.com/">MongoDB</a> is a cross-platform
+            document-oriented database program. Classified as a NoSQL database
+            program, MongoDB uses JSON-like documents with schema. MongoDB is
+            developed by MongoDB Inc. and licensed under the Server Side Public
+            License.
+          </p>
+        </div>
+        <div class="child2">
+          <img
+            id="mern-icons"
+            src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/359/thumb/expressjslogo.png"
+          />
+          <p id="mern-bio">
+            <a href="https://expressjs.com/">Express.js</a>, or simply Express,
+            is a web application framework for Node.js, released as free and
+            open-source software under the MIT License. It is designed for
+            building web applications and APIs. It has been called the de facto
+            standard server framework for Node.js
+          </p>
+        </div>
+
+        <div class="child3">
+          <img
+            id="mern-icons"
+            src="https://miro.medium.com/max/500/1*cPh7ujRIfcHAy4kW2ADGOw.png"
+          />
+          <p id="mern-bio">
+            <a href="https://reactjs.org/">React</a> is a JavaScript library for
+            building user interfaces. It is maintained by Facebook and a
+            community of individual developers and companies. React can be used
+            as a base in the development of single-page or mobile applications,
+            as it is optimal for fetching rapidly changing data that needs to be
+            recorded.
+          </p>
+        </div>
+
+        <div class="child4">
+          <img
+            id="mern-icons"
+            src="https://www.barrownz.com/Content/Images/Logos/NodeJSLogo.png"
+          />
+          <p id="mern-bio">
+            <a href="https://nodejs.org/">Node.js</a> is an open-source,
+            cross-platform, JavaScript runtime environment that executes
+            JavaScript code outside of a browser.
+          </p>
+        </div>
       </div>
     </section>
     <aside>
       <div id="parent2">
-        <div class="child5">1</div>
-        <div class="child6">2</div>
+        <div class="child5">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/7CqJlxBYj-M"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="child6">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/0exPcP2h3N0"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </aside>
-    <footer>Footer</footer>
+    <footer>Copyright 2019 Persevere</footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
